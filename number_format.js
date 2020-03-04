@@ -5,7 +5,7 @@ function number_format(num,dec,dec_point,thousands_sep){
     num = num - 1 + 1;
     //dec
     dec = dec < 0 ? 0 : dec;
-    var strnum = Math.round(num * Math.pow(10,dec)) / Math.pow(10,dec);
+    var strnum = Math.floor(num * Math.pow(10,dec)) / Math.pow(10,dec);
     var addZero = "";
     if( strnum.toString().indexOf('.') == -1 ){
         if(dec > 0){
