@@ -6,6 +6,10 @@
 ## Usage
 
 ```javascript
+number_format(1.5) // returns '2'
+``` 
+
+```javascript
 number_format(1.5, 2) // returns '1.50'
 ``` 
 
